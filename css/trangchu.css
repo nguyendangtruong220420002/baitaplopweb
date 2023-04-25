@@ -1,0 +1,283 @@
+.card {
+    border: none;
+}
+
+.card img {
+    height: 200px;
+}
+
+#menu {
+    background-color: #cc0001;
+    color: white;
+}
+
+#nitem {
+    color: white;
+}
+
+#logo {
+    height: 50px;
+}
+
+.navbar-brand {
+    font-size: 100%;
+}
+
+.nav-item {
+    padding: 10px 10px;
+}
+
+.supplier img {
+    width: 50px;
+    height: 50px;
+}
+
+.information a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.information a {
+    color: #000;
+}
+
+.sell a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.sell a {
+    color: #000;
+}
+
+footer {
+    background-color: #cc0001;
+}
+
+footer a {
+    color: white;
+}
+
+footer ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+li label {
+    color: white;
+    font-size: 150%;
+}
+
+.info {
+    margin-left: 50px;
+}
+
+.copyright {
+    color: white;
+    margin-left: 400px;
+    border-top: 2px solid white;
+}
+
+.copyright {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 120%;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    font-size: 130%;
+    color: red;
+}
+
+.loai {
+    border-left: 5px solid red;
+}
+
+hr {
+    border-bottom: 1px solid black;
+}
+
+.loai h3 {
+    margin-left: 10px;
+}
+
+.supplier {
+    border-left: 5px solid red;
+}
+
+.supplier h3 {
+    margin-left: 10px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#anhchitiet img {
+    width: 300px;
+    height: 300px;
+}
+
+#FormDangKy {
+    background-image: url(../img/DangKy/hinh-nen-galaxy-vu-tru-dep-cho-may-tinh-dien-thoai.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+
+#check {
+    margin-left: 380px;
+}
+
+#DangKy {
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #cc0001;
+    color: white;
+}
+
+.modal-content {
+    border-radius: 100px;
+}
+
+#imgMD {
+    margin-left: 150px;
+    height: 200px;
+    width: 200px;
+}
+
+#warranty1,
+#warranty2,
+#warranty3,
+#warranty4 {
+    list-style: none;
+}
+
+.warranty__title h2 {
+    color: #cc0001;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+#btMoRong {
+    height: 50px;
+    margin-left: 700px;
+}
+
+#imgstep {
+    width: 100%
+}
+
+#table-scrollx,
+tr,
+th {
+    border: 1px solid black;
+}
+
+.warranty__part li {
+    list-style: none;
+}
+
+#imgstep2 {
+    margin-left: 610px;
+}
+
+#imgstep3 {
+    margin-left: 500px;
+}
+
+#imgstep4 {
+    margin-left: 650px;
+}
+
+#chitiet img {
+    width: 200px;
+    height: 200px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.news a {
+    color: #000;
+}
+
+.news a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.breadcrumb a {
+    color: black;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: red;
+}
+
+.logoGioiThieu {
+    width: 300px;
+    margin: 30px 0px 10px 200px;
+}
+
+#section01 h3 {
+    font-size: 180%;
+    color: white;
+}
+
+#section01 {
+    background-image: url(../img/gioithieu/sec1_1.jpg);
+    background-size: 100%;
+}
+
+#section02 {
+    background-image: url(../img/gioithieu/sec2.jpeg);
+    background-size: 100%;
+    font-size: 180%;
+    padding-top: 50px;
+}
+
+.section-inner__desc p {
+    color: white;
+}
