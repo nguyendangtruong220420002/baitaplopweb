@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký nhận tư vấn</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script12.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            function KiemTraHoTen() {
+                let HoTen = $("#txtHoTen").val()
+                let ktHoTen = /^([A-Z][a-z]+\s*)+$/
+
+                if (HoTen.trim() == "") {
+                    $("#erHoTen").html("không được để trống")
+                    return false
+                }
+                if (!ktHoTen.test(HoTen)) {
+                    $("#erHoTen").html("sai dữ liệu")
+                    return false
+                }
+                if (ktHoTen.test(HoTen)) {
+                    $("#erHoTen").html("")
+                    return true
+                }
+            }
+            $("#txtHoTen").blur(KiemTraHoTen)
+
+            function KiemTraDiaChi() {
+                let DiaChi = $("#txtDiaChi").val()
+                let ktDiaChi = /^([0-9A-Za-z]+\s*)+$/
+
+                if (DiaChi.trim() == "") {
+                    $("#erDiaChi").html("không được để trống")
+                    return false
+                }
+                if (!ktDiaChi.test(DiaChi)) {
+                    $("#erDiaChi").html("sai dữ liệu")
+                    return false
+                }
+                if (ktDiaChi.test(DiaChi)) {
+                    $("#erDiaChi").html("")
+                    return true
+                }
+            }
+            $("#txtDiaChi").blur(KiemTraDiaChi)
+
+            function KiemTraSDT() {
+                let SDT = $("#txtSDT").val()
+                let ktSDT = /^[0-9]{9,11}$/
+                if (SDT.trim() == "") {
+                    $("#erSDT").html("không được để trống")
+                    return false
+                }
+                if (!ktSDT.test(SDT)) {
+                    $("#erSDT").html("sai dữ liệu")
+                    return false
+                }
+                if (ktSDT.test(SDT)) {
+                    $("#erSDT").html("")
+                    return true
+                }
+            }
+            $("#txtSDT").blur(KiemTraSDT)
+
+            function KiemTraEmail() {
+                let Email = $("#txtEmail").val()
+                let ktEmail = /^.+@[A-Za-z]+(.vn||.com)$/
+                if (!ktEmail.test(Email)) {
+                    $("#erEmail").html("sai dữ liệu")
+                    return false
+                }
+                if (ktEmail.test(Email)) {
+                    $("#erEmail").html("")
+                    return true
+                }
+            }
+            $("#txtEmail").blur(KiemTraEmail)
+
+            function KiemTraCheck() {
+                if ($('#Check').is(':checked')) {
+                    $("#ercheck").html("")
+                    return true
+                } else {
+                    $("#ercheck").html("Vui lòng check vào ô đồng ý")
+                    return false
+                }
+
+            }
+
+            $("#DangKy").click(function() {
+                if (!KiemTraCheck() || !KiemTraHoTen() || !KiemTraDiaChi() || !KiemTraSDT() || !KiemTraEmail())
+                    return false
+
+                $("#myModal").modal()
+            })
+
+        })
+    </script>
+
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light " id="menu">
+            <!--navbar-expand-lg: định dạng cho thiết bị
+                navbar-light:
+                bg-light: background màu trắng
+            -->
+            <div class="container-fluid">
+                <img src="../img/logo/logo-removebg-preview.png" alt="" id="logo">
+                <h1><a class="navbar-brand" href="../html/trangchu.html" id="nitem">TRƯỜNG MINH</a></h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#target" aria-controls="target">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <!--Thanh menu-->
+
+
+                <div class="row navbar-brand navbar-expand-lg">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="../html/trangchu.html" class="nav-link">TRANG CHỦ</a></li>
+                        <li class="nav-item"><a href="../html/gioithieu.html" class="nav-link">GIỚI THIỆU </a></li>
+                        <li class="dropdown nav-item"><a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">HÃNG XE</a>
+                            <ul class="dropdown-menu mt-2">
+                                <li class="nav-item"><a href="../html/Yamaha.html">YAMAHA</a></li>
+                                <li class="nav-item"><a href="../html/Yamaha.html">SUZUKI</a></li>
+                                <li class="nav-item"><a href="../html/Yamaha.html">HONDA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="../html/phukien.html" class="nav-link">PHỤ KIỆN</a></li>
+                        <li class="nav-item"><a href="../html/sitemap.html" class="nav-link">SITEMAP</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Tìm kiếm-->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Tìm kiếm ..." aria-label="Search">
+                <!-- <a href="#" id="imgSearch"><img src="../img/logo/search.jpg" alt=""></a> -->
+                <button class="btn btn-light" type="submit">TÌM</button>
+            </form>
+        </nav>
+    </div>
+    <!--Form Dang Ky-->
+    <div id="FormDangKy">
+        <div class="container">
+            <br>
+            <div class="row ml-5">
+                <img src="../img/DangKy/image-removebg-preview.png" alt="">
+            </div>
+            <div class="row">
+                <span class="col mt-5 text-center">vui lòng nhập đầy đủ và chính xác các thông tin bên dưới</span>
+            </div>
+            <div class="row mt-5 input-group mb-3">
+                <span class="input-group-text" id="">Họ tên:</span>
+                <input type="text" id="txtHoTen" class="form-control" placeholder="Nhập họ tên" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text text-danger" id="erHoTen">*</span>
+            </div>
+            <div class="row input-group mb-3">
+                <span class="input-group-text" id="">Ngày sinh:</span>
+                <input type="date" id="NgaySinh" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text text-danger" id="erNgaySinh">*</span>
+            </div>
+            <div class="row input-group mb-3">
+                <span class="input-group-text" id="">Giới tính:</span>
+                <select name="GioiTinh" id="GioiTinh" class="form-control">
+                    <option value="">Nam</option>
+                    <option value="">Nữ</option>
+                </select>
+                <span class="input-group-text text-danger" id=""></span>
+            </div>
+            <div class="row input-group mb-3">
+                <span class="input-group-text" id="">Địa chỉ:</span>
+                <input type="text" id="txtDiaChi" class="form-control" placeholder="Nhập địa chỉ" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text text-danger" id="erDiaChi">*</span>
+            </div>
+            <div class="row input-group mb-3">
+                <span class="input-group-text" id="">Số điện thoại:</span>
+                <input type="text" class="form-control" id="txtSDT" placeholder="Nhập số điện thoại" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text text-danger" id="erSDT">*</span>
+            </div>
+            <div class="row input-group mb-3">
+                <span class="input-group-text" id="">Email:</span>
+                <input type="text" id="txtEmail" class="form-control" placeholder="Nhập email (nếu có)" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text text-danger" id="erEmail">*</span>
+            </div>
+            <div class="row input-group mt-5" id="check">
+                <input class="form-check-input" type="checkbox" value="" id="Check">
+                <label class="form-check-label" for="Check">
+                    TÔI ĐỒNG Ý VỚI CHÍNH SÁCH QUYỀN RIÊNG TƯ.
+                </label>
+            </div>
+            <div class="row input-group" id="check">
+                <span style="color: #cc0001;" id="ercheck"></span>
+            </div>
+            <div class="row input-group mt-5" id="check">
+                <button class="btn-danger" id="DangKy">ĐĂNG KÝ NGAY</button>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="modal face" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <img class="mt-5" id="imgMD" src="../img/DangKy/11-118415_check-logo-png-clip-art-royalty-free-stock.png">
+                        <p class="text-center text-danger mt-3 mb-5">Đăng ký thành công</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- Footer------------------------------------------------------------------------------------------ -->
+    <footer class="footer">
+        <div class="row">
+            <div class="info">
+
+                <ul>
+                    <li><label>CHĂM SÓC KHÁCH HÀNG</label></li>
+                    <li><a href="../html/chamsockhachhang.html">Giới Thiệu</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Khiếu Nại</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Tư Vấn Sản Phẩm</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Chính Sách Bảo Hành</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="info">
+                <ul>
+                    <li><label>KHUYẾN MÃI</label></li>
+                    <li><a href="../html/khuyenmai.html">Flash Sales</a></li>
+                    <li><a href="../html/khuyenmai.html">Mã Giảm Giá</a></li>
+                    <li><a href="../html/khuyenmai.html">Chương Trình Tích Lũy</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <ul>
+                    <li><label>TIN TỨC</label></li>
+                    <li><a href="../html/tintuc.html">Tin tức chung</a></li>
+                    <li><a href="../html/tintuc.html">Tin tức xe máy</a></li>
+                    <li><a href="../html/tintuc.html">Doanh số bán hàng</a></li>
+                    <li><a href="../html/tintuc.html">Lái xe an toàn</a></li>
+                    <li><a href="../html/tintuc.html">Đóng góp xã hội</a></li>
+                    <li><a href="../html/tintuc.html">Các tin khác</a></li>
+                </ul>
+            </div>
+
+
+            <div class="info ">
+                <ul>
+                    <li><label>LIÊN HỆ</label></li>
+                    <li><a href=" ">Cá nhân:</a></li>
+                    <li>
+                        <a href="tel://0373781470 ">Điện thoại: 09467404017</a>
+                    </li>
+                    <li>
+                        <a href="mailto:nguyenddangtruong22042002@gmail.com"> nguyenddangtruong22042002@gmail.com</a>
+                    </li>
+                    <li><br></li>
+                    <li><a href=" ">Trường Đại học công nghiệp tp Hồ Chí Minh:</a></li>
+                    <li>
+                        <a href="tel://09464740401">Điện thoại: 094640401</a>
+                    </li>
+                    
+            </div>
+
+
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray ">
+
+            <div class="copyright ">
+                <a></a> &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> Bản quyền thuộc về <a target="_blank ">NDT, 2006481</a> | <a target="_blank ">CAM</a>
+            </div>
+            <br>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

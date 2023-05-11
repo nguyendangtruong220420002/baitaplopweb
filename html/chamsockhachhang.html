@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chăm sóc khách hàng</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script12.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light " id="menu">
+            <!--navbar-expand-lg: định dạng cho thiết bị
+                navbar-light:
+                bg-light: background màu trắng
+            -->
+            <div class="container-fluid">
+                <img src="../img/logo/logo-removebg-preview.png" alt="" id="logo">
+                <h1><a class="navbar-brand" href="../html/trangchu.html" id="nitem">TRƯỜNG MINH</a></h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#target" aria-controls="target">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <!--Thanh menu-->
+
+
+                <div class="row navbar-brand navbar-expand-lg">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="../html/trangchu.html" class="nav-link">TRANG CHỦ</a></li>
+
+                        <li class="dropdown nav-item"><a href="" class="dropdown-toggle nav-link" data-toggle="dropdown">HÃNG XE MÁY</a>
+                            <ul class="dropdown-menu mt-2">
+                                <li class="nav-item"><a href="../html/Yamaha.html">YAMAHA</a></li>
+                                <li class="nav-item"><a href="../html/Yamaha.html">SUZUKI</a></li>
+                                <li class="nav-item"><a href="../html/Yamaha.html">HODA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="../html/phukien.html" class="nav-link">PHỤ KIỆN</a></li>
+                        <li class="nav-item"><a href="../html/dichvu.html" class="nav-link">DỊCH VU CHĂM SỐC KHÁCH HÀNG</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Tìm kiếm-->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Tìm kiếm ..." aria-label="Search">
+                <!-- <a href="#" id="imgSearch"><img src="../img/logo/search.jpg" alt=""></a> -->
+                <button class="btn btn-light" type="submit">Search</button>
+            </form>
+        </nav>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Hình ảnh -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/carousel/1.jpg" alt="img1" width="100%" height="550">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carousel/2.PNG" alt="img2" width="100%" height="550">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carousel/3.PNG" alt="img3" width="100%" height="550">
+            </div>
+        </div>
+
+        <!-- Thanh điều hướng -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!--Dich Vu-------------------------------------------------------------------------->
+    <div class="overlay">
+        <div class="overlay-content">
+            <div id="warranty" class="warranty">
+                <ul class="warranty__wrap">
+                    <li id="warranty1">
+                        <div class="warranty__title">
+                            <h2>Chính sách bảo hành</h2>
+                        </div>
+                        <div class="warranty__title-sub">
+                            <p>Tất cả các loại xe gắn máy Yamaha mới do Yamaha Motor Việt Nam sản xuất, được mua từ các Đại lý do Yamaha ủy nhiệm đều được đăng ký bảo hành và cấp sổ bảo hành để hưởng dịch vụ bảo hành (điều chỉnh hay thay thế miễn phí bất
+                                kỳ chi tiết nào bị hư hỏng do lỗi của nhà sản xuất – không bao gồm những điều ngoài phạm vi bảo hành nêu ở mục dưới đây) trong thời gian quy định. Thời hạn bảo hành là ba (3) năm hay 30.000km đầu tiên, tùy theo điều kiện
+                                nào đến trước (*)</p>
+                        </div>
+                        <div class="warranty__part">
+                            <div class="hidentxt1 collapse">
+                                <h4>(*) ĐIỀU KIỆN CHI TIẾT CỦA CHÍNH SÁCH BẢO HÀNH 5 NĂM (100.000KM):</h4>
+                                <div>
+                                    <p>– Nếu khách hàng sử dụng đầy đủ &amp; đúng thời gian quy định trên mỗi phiếu của 03 phiếu miễn phí đầu tiên (phiếu số 1 đến số 3) tại đại lý do Yamaha ủy nhiệm sẽ được gia hạn thêm 01 năm hoặc 10.000km bảo hành, tổng
+                                        thời gian bảo hành là 2 năm hoặc 20.000km, tùy theo điều kiện nào đến trước.<br> – Nếu khách hàng sử dụng đầy đủ &amp; đúng 03 phiếu bảo dưỡng miễn phí đầu tiên, tiếp tục sử dụng đủ &amp; đúng 03 phiếu của năm thứ
+                                        2 (phiếu số 4 đến số 6) tại đại lý do Yamaha ủy nhiệm sẽ được gia hạn thêm 1 năm hoặc 10.000km bảo hành nữa, tổng thời gian bảo hành là 03 năm hoặc 30.000km, tùy theo điều kiện nào đến trước.<br> Tham khảo thêm
+                                        hình minh họa dưới đây:</p>
+                                    <p><img class="lazyload alignnone responsive" id="imgstep" src="../img/DichVu/step.jpg" alt="" width="955" height="299"></p>
+                                    <h4>* QUYỀN LỢI  CỦA KHÁCH HÀNG  VÀ TRÁCH NHIỆM </h4>
+                                    <p>– Để đảm bảo quyền lợi được hưởng chế độ Bảo hành của nhà sản xuất, Yamaha Motor Việt Nam khuyến cáo, khách hàng nên lựa chọn mua xe tại đại lý ủy quyền của Yamaha trên toàn quốc. Đại lý ủy quyền của Yamaha phải bàn
+                                        giao số bảo hành và đăng ký bảo hành cho xe trước khi giao xe mới cho khách hàng.<br> – Quý khách hàng có thể tải ứng dụng My Yamaha trên CH Play (Android) hoặc App store (iOs) để tự đăng ký bảo hành cho xe.<br>                                        – Trong suốt giai đoạn được hưởng dịch vụ bảo hành, khách hàng có quyền mang xe đến bất kỳ đại lý ủy nhiệm nào của YAMAHA để sử dụng dịch vụ này (Nội dung của dịch vụ như nêu ở phần trên).<br> – Nếu có những nghi
+                                        vấn về sự hỏng hóc cần bảo hành, khách hàng phải mang xe đến đại lý ủy nhiệm của YAMAHA trong vòng 03 ngày kể từ khi phát hiện ra hiện tượng hư hỏng.<br> – Khách hàng phải bảo dưỡng và sử dụng xe đúng cách, phải
+                                        tuân thủ theo những hướng dẫn và những lời khuyên nêu trong “Sách hướng dẫn sử dụng xe”.<br> – Khách hàng vẫn có quyền sử dụng phiếu bảo dưỡng miễn phí đến hết năm thứ 3 cho dù đã bỏ qua các phiếu bảo dưỡng trước
+                                        đó và thời hạn bảo hành của xe đã hết hiệu lực.<br> * CHÍNH SÁCH BẢO HÀNH ĐẶC BIỆT</p>
+                                    <p>Quý khách hàng thân mến!<br> Nhằm quảng bá và khẳng định chất lượng vượt trội của bộ chi tiết xilanh và piston DiASil, nhờ ứng dụng bí quyết công nghệ độc đáo của Yamaha đó là:<br> Công nghệ đúc hợp kim nhôm silicon
+                                        “DiASil” và công nghệ piston nhôm dập nóng. Công ty TNHH Yamaha Motor Việt Nam xin trân trọng thông báo đến Quý khách hàng về chính sách bảo hành đặc biệt đối với bộ xilanh và piston DiASil như sau:<br> 1. Thời
+                                        hạn bảo hành đối với bộ xilanh và piston DiASil là sáu mươi (60) tháng/(5 năm) hoặc 50.000 km, tùy theo điều kiện nào đến trước.<br> 2. Chỉ bộ xilanh và piston DiASil được bảo hành theo thời hạn trên khi nguyên
+                                        nhân chính của hư hỏng trực tiếp do xilanh và piston gây ra .<br> 3. Bộ xilanh và piston DiASil sẽ không được bảo hành theo thời hạn trên nếu:<br> – Nguyên nhân chính của hư hỏng bộ xilanh và piston DiASil là do
+                                        chi tiết khác gây ra, kể cả do xéc măng (bạc), ví dụ như: lọc gió bẩn hay hư hỏng, hệ thống làm mát bị hư hỏng, hệ thống bôi trơn bị hư hỏng, dùng sai loại bugi, do xupap gây ra, …<br> – Lỗi do việc sử dụng xe không
+                                        đúng mục đích thiết kế, không đúng hướng dẫn sử dụng,ví dụ: đi vào chỗ nước ngập sâu và nước lọt vào động cơ,dùng xăng hay dầu nhớt bị pha chế phụ gia không phù hợp,<br> – Lỗi do việc bảo trì, bảo dưỡng không đúng,
+                                        ví dụ: lâu không thay nhớt, thiếu nhớt, …<br> – Do chế tác, sửa đổi hoặc lắp ráp các phụ tùng liên quan không chính hiệu Yamaha.<br> – Do lưu kho hay vận chuyển không đúng.<br> – Do thiên tai, hỏa hoạn hay tai nạn<br>                                        4. Chính sách bảo hành đặc biệt này cũng áp dụng cho tất cả các xe Exciter và Nouvo 135 đã bán trước đây. Thời hạn bảo hành còn lại đối với bộ xilanh pistion của những xe đã bán là hiệu số của 60 tháng trừ đi số
+                                        tháng chiếc xe đã sử dụng tính từ thời điểm xe được bán.<br> Rất mong nhận được sự hài lòng và tin tưởng của Quý khách hàng với sản phẩm và dịch vụ của Yamaha.<br> 5. Những chi tiết và hạng mục không bảo hành:</p>
+                                    <div class="table-scrollx" style="border: 1px solid black;">
+                                        <table class="tbl-mantaince">
+                                            <tbody>
+                                                <tr>
+                                                    <th>MỤC</th>
+                                                    <th>Tên chi tiết</th>
+                                                    <th>Dạng hư hỏng</th>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="6">ĐÔNG CƠ XE</th>
+                                                    <td> Những lỗi lặt vật </td>
+                                                    <td>Hư hỏng theo thời gian hoặc tháo lắp để bảo dưỡng thông thường.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lọc xăng</td>
+                                                    <td>Tắc do bụi bẩn, hoặc không sử dụng trong thời gian dài.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Các chi tiết bộ ly hợp</td>
+                                                    <td>Mòn theo thời gian hoặc vận hành sai.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bugi</td>
+                                                    <td>Điện cực mòn theo thời gian sử dụng, biến dạng, vỡ sứ cách điện.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lọc gió</td>
+                                                    <td>Tắc, hư hỏng theo thời gian sử dụng hoặc bảo dưỡng thông thường.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Các ống nối</td>
+                                                    <td>Lão hóa theo thời gian sử dụng.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="5">Hệ thống điện</th>
+                                                    <td>Bóng đèn các loại</td>
+                                                    <td>Hư hỏng theo thời gian sử dụng.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chổi tdan, cổ góp mô tơ đề</td>
+                                                    <td>Hao mòn theo thời gian.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cầu chì, pin chìa khóa</td>
+                                                    <td>Hư hỏng theo thời gian hoặc đấu nối thêm phụ kiện không chính hãng Yamaha.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bộ sạc, bộ phát điện</td>
+                                                    <td rowspan="2">Đấu nối thêm hoặc sử dụng thiết bị, phụ tùng không chính hãng Yamaha Motor Việt Nam.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Các chi tiết điện khác</td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="5">Khung sườn</th>
+                                                    <td>Má phanh, đĩa phanh</td>
+                                                    <td>Mòn theo thời gian, hư hỏng do tác động bên ngoài.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nhông, xích tải</td>
+                                                    <td>Mòn theo thời gian.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Các chi tiết xi mạ</td>
+                                                    <td>Đổi màu hoặc gỉ sét, rộp do hóa chất.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Các chi tiết sơn.</td>
+                                                    <td>Phai màu theo thời gian, điều kiện khắc nghiệt, Rộp do hóa chất.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Các chi tiết cao su, nhựa.</td>
+                                                    <td>Nứt, vỡ do tác động từ bên ngoài hoặc hóa chất.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="8">Những mục khác</th>
+                                                    <td colspan="2">Việc bảo dưỡng thông thường, dầu, mỡ, hóa chất các loại.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Những hư hỏng do sửa chữa ở cửa hàng không phải do Yamaha ủy nhiệm.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Những hư hỏng do sử dụng xe không đúng với mục đích thiết kế ban đầu.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Những thiệt hại do thiên tai, hỏa hoạn hay tai nạn.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Những thiệt hại do lưu kho hay vận chuyển không đúng cách.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Hư hỏng liên quan đến chế tác, lắp đặt các phụ kiện không chính hãng Yamaha.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Những hư hỏng do sử dụng dụng cụ để tháo, lắp, bảo dưỡng không thích hợp.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">Trong phạm vi pháp luật cho phép Yamaha Việt Nam từ chối trách nhiệm cho việc mất thời gian cũng như các chi phí cho việc liên lạc, vận chuyển, ăn ở trong quá trình sửa chữa xe tại các trung tâm bảo
+                                                        hành.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">* Một số phụ tùng sẽ bảo hành theo cụm (mô tơ đề, van tiết lưu, giảm xóc, cụm trục khuỷu, bơm xăng, đồng hồ) Công ty Yamaha sẽ từ chối bảo hành nếu phát hiện có dấu hiệu tháo hoặc điều chỉnh trước đó.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="btnmore" data-target=".hidentxt1" data-id="#warranty1" data-toggle="collapse"><img id="btMoRong" src="../img/DichVu/ten2huong-removebg-preview.png" alt=""></p>
+                        </div>
+                    </li>
+
+                    <li id="warranty2" class="bag">
+                        <div class="warranty__title">
+                            <h2>Hướng dẫn sử<br> dụng dịch vụ</h2>
+                        </div>
+                        <div class="warranty__title-sub">
+                            <p>Khách hàng sử dụng xe gắn máy do Yamaha Motor Việt Nam sản xuất, mua từ Đại lý do Yamaha ủy nhiệm, được đăng ký bảo hành và cấp sổ bảo hành hoặc tải ứng dụng My Yamaha trên App store (iOs) hoặc CH Play (Android) để hưởng dịch
+                                vụ bảo hành. Khách hàng hãy làm theo các bước sau đây để có thể nhận được dịch vụ bảo hành của Yamaha Motor Việt Nam tại các đại lý ủy quyền của Yamaha.</p>
+                        </div>
+                        <div class="warranty__part">
+                            <div class="hidentxt2 collapse">
+                                <ul class="lstInner">
+                                    <li><img class="lazyload " id="imgstep2" src="../img/DichVu/ico_step01.jpg">
+                                        <div class="inner">
+                                            <p>1. Sổ bảo hành có hiệu lực khi đại lý nơi khách hàng mua xe điền đầy đủ thông tin yêu cầu trong “Phiếu đăng ký bảo hành xe gắn máy Yamaha” và có dấu xác nhận của đại lý hoặc có đầy đủ thông tin đăng ký bảo hành
+                                                của xe quý khách hàng đã mua trên ứng dụng My Yamaha.</p>
+                                        </div>
+                                    </li>
+                                    <li><img class="lazyload " id="imgstep2" src="../img/DichVu/ico_step02.jpg">
+                                        <div class="inner">
+                                            <p>2. Trong vòng 36 tháng hoặc 30.000 km đầu tiên (tùy theo điều kiện nào đến trước), nếu chiếc xe Yamaha của khách hàng bị hư hỏng do lỗi của nhà sản xuất (không bao gồm những mục nằm ngoài phạm vi bảo hành được
+                                                nêu ở trên), khách hàng có thể mang xe tới bất kỳ đại lý ủy quyền hoặc trạm bảo hành của Yamaha trên toàn quốc để được hưởng dịch vụ bảo hành.</p>
+                                        </div>
+                                    </li>
+                                    <li><img class="lazyload " id="imgstep2" src="../img/DichVu/ico_step03.jpg">
+                                        <div class="inner">
+                                            <p>3. Khi mang xe tới bảo hành tại Đại lý ủy nhiệm bất kỳ của YAMAHA, khách hàng phải xuất trình sổ bảo hành hoặc thông tin bảo hành của xe trên ứng dụng My Yamaha.</p>
+                                        </div>
+                                    </li>
+                                    <li><img class="lazyload " id="imgstep2" src="../img/DichVu/ico_step04.jpg">
+                                        <div class="inner">
+                                            <p>4. Sau khi khách hàng mô tả tình trạng của xe, nhân viên kỹ thuật của đại lý sẽ tiến hành kiểm tra sơ bộ, đánh giá và quyết định chi tiết hư hỏng của chiếc xe có phải nguyên nhân từ nhà sản xuất hay không. –
+                                                Nếu chiếc xe bị hư hỏng không phải do lỗi của nhà sản xuất, yêu cầu bảo hành của khách hàng sẽ không được chấp nhận. Trong trường hợp này, nếu muốn sửa chữa hay thay thế linh kiện hư hỏng của chiếc xe, khách
+                                                hàng sẽ phải thanh toán đầy đủ tiền công sửa chữa và tiền phụ tùng tại đại lý. – Nếu chiếc xe bị hư hỏng do lỗi của nhà sản xuất, yêu cầu bảo hành của khách hàng sẽ được chấp nhận. Trong trường hợp này,
+                                                đại lý sẽ tiến hành sửa chữa hoặc thay thế (nếu cần thiết) phụ tùng hư hỏng của chiếc xe, và khách hàng không phải trả bất kỳ một khoản chi phí nào cho việc sửa chữa cũng như phụ tùng thay thế. Phụ tùng
+                                                hư hỏng sẽ được đại lý giữ lại để gửi lên Công ty TNHH Yamaha Motor Việt Nam xem xét và nghiên cứu.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="btnmore" data-target=".hidentxt2" data-id="#warranty2" data-toggle="collapse"><img id="btMoRong" src="../img/DichVu/ten2huong-removebg-preview.png" alt=""></p>
+                        </div>
+                    </li>
+
+                    <li id="warranty3">
+                        <div class="warranty__title">
+                            <h2>Sổ bảo hành và ứng dụng My Yamaha</h2>
+                        </div>
+                        <div class="warranty__title-sub">
+                            <p>Sổ bảo hành và ứng dụng My Yamaha là căn cứ để khách hàng sử dụng quyền lợi về dịch vụ sau bán hàng đối với chiếc xe của mình: Dịch vụ bảo hành. / Dịch vụ bảo dưỡng định kỳ miễn phí. / Các chương trình khuyến mại, chăm sóc
+                                khách hàng, … Để đảm bảo các khách hàng có thể sử dụng quyền lợi dịch vụ trên tại bất cứ trạm dịch vụ uỷ quyền nào của Yamaha trên toàn quốc, khi giao xe Yamaha mới cho khách, các đại lý ủy quyền của Yamaha phải đăng ký
+                                và cấp <a href="#">sổ bảo hành thật</a> do Công ty TNHH Yamaha Motor Việt Nam Yamaha Motor cấp kèm theo xe hoặc khách hàng có thể tự mình tải ứng dụng My Yamaha trên CH Play (Android) và App store (iOs) để đăng ký bảo hành
+                                cho xe.</p>
+                        </div>
+                        <div class="warranty__part">
+                            <div class="hidentxt3 collapse">
+                                <p>
+                                    <picture>
+                                        <img class="alignnone  wp-image-25112 webpexpress-processed lazyloaded" id="imgstep3" src="../img/DichVu/Sobaohanh.jpg" alt="" width="492" height="677" data-sizes="(max-width: 492px) 100vw, 492px" sizes="(max-width: 492px) 100vw, 492px"></picture>
+                                </p>
+                                <p><strong>Lưu ý</strong> : Nếu khách hàng không nhận được sổ bảo hành có đủ các phiếu bảo dưỡng định kỳ miễn phí hoặc sổ bảo hành không phải do Yamaha cung cấp kèm theo xe (tham khảo mẫu sổ bảo hành và các phiếu bảo dưỡng
+                                    miễn phí ở phần sau) hoặc thông tin xe trên ứng dụng My Yamaha không đầy đủ thì khách hàng sẽ bị mất quyền sử dụng các dịch vụ Bảo hành và bảo dưỡng định kỳ miễn phí. Vì quyền lợi chính đáng của mình, mỗi khách hàng
+                                    hãy cùng với Công ty TNHH Yamaha Motor Việt Nam Yamaha bảo vệ quyền lợi của người tiêu dùng bằng cách chủ động yêu cầu đại lý bán xe đăng ký và cung cấp sổ bảo hành thật hoặc tải ngay ứng dụng My Yamaha và đăng ký thông
+                                    tin xe ngy từ khi mua xe.</p>
+                                <p><strong>Sổ bảo hành chỉ được cấp một lần duy nhất.</strong></p>
+                            </div>
+                            <p class="btnmore" data-target=".hidentxt3" data-id="#warranty3" data-toggle="collapse"><img id="btMoRong" src="../img/DichVu/ten2huong-removebg-preview.png" alt=""></p>
+                        </div>
+                    </li>
+
+                    <li id="warranty4">
+                        <div class="warranty__title">
+                            <h2>Lịch bảo dưỡng miển phí</h2>
+                        </div>
+                        <div class="warranty__title-sub">
+                            <p>Trong sổ bảo hành cấp cho khách hàng có chín (09) phiếu bảo dưỡng định kì trong sổ bảo hành hoặc trên ứng dụng My Yamaha để sử dụng dịch vụ này.</p>
+                        </div>
+                        <img src="../img/DichVu/Baotri.png" id="imgstep4" alt="">
+                        <div class="warranty__part">
+                            <div class="hidentxt4 collapse">
+                                </p>
+                                <p>Phiếu bảo dưỡng miễn phí được chia làm ba loại với thời hạn sử dụng và nội dung khác nhau.</p>
+                                <p>Loại<strong>&nbsp;“Phiếu bảo dưỡng cấp độ 1”</strong>&nbsp;có một (01) phiếu;</p>
+                                <p>Loại&nbsp;<strong>“Phiếu bảo dưỡng cấp độ 2”</strong>&nbsp;có năm (05) phiếu;</p>
+                                <p>Loại&nbsp;<strong>“Phiếu bảo dưỡng cấp độ 3”</strong>&nbsp;có ba (03) phiếu.</p>
+                                <p>– Phiếu số 1: Sử dụng trong vòng 4 tháng đầu tiên.<br> – Phiếu số 2: Sử dụng từ tháng thứ năm đến tháng thứ mười<br> – Phiếu số 3: Sử dụng từ tháng thứ mười một đến tháng thứ mười bốn.<br> – Phiếu số 4: Sử dụng từ tháng
+                                    thứ mười lăm đến tháng thứ mười tám.<br> – Phiếu số 5: Sử dụng từ tháng thứ mười chín đến tháng thứ hai mươi hai.<br> – Phiếu số 6: Sử dụng từ tháng thứ hai mươi ba đến tháng thứ hai mươi sáu.<br> – Phiếu số 7: Sử dụng
+                                    từ tháng thứ hai bảy đến tháng thứ ba mươi.<br> – Phiếu số 8: Sử dụng từ tháng thứ ba mươi mốt đến tháng thứ ba mươi tư.<br> – Phiếu số 9: Sử dụng từ tháng thứ ba lăm đến tháng thứ ba tám.</p>
+                                <p>
+                                    <picture>
+
+                                        <img class="alignnone size-full wp-image-18028 webpexpress-processed lazyloaded" alt="" width="988" height="306" src="../img/DichVu/Phieubaohanh.jpg" data-sizes="(max-width: 988px) 100vw, 988px" sizes="(max-width: 988px) 100vw, 988px"></picture>
+                                </p>
+                            </div>
+                            <p class="btnmore" data-target=".hidentxt4" data-id="#warranty4" data-toggle="collapse"><img id="btMoRong" src="../img/DichVu/ten2huong-removebg-preview.png" alt=""></p>
+                        </div>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!----Tin tức------------------------------------------------------------------------------>
+    <div class="news">
+        <div class="container">
+            <h3>Tin tức</h3>
+            <hr>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/tintuc/dance.png" class="card-img-top" alt="dance">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">BÙNG KHÍ CHẤT, CHÁY ĐAM MÊ CÙNG DANCE COVER CONTEST: EXCITER MASTER ART OF STREET</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/tintuc/cuocthi.png" class="card-img-top" alt="cuocthi">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">CUỘC THI SÁNG TÁC NGHỆ THUẬT “EXCITER: MASTER ART OF STREET”</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/tintuc/cuocthiART.png" class="card-img-top" alt="cuocthiART">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">CUỘC THI ĐỘ XE NGHỆ THUẬT YAMAHA EXCITER 155 VVA “MASTER ART OF STREET”</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/tintuc/trungthuong.png" class="card-img-top" alt="trungthuong">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">DANH SÁCH KHÁCH HÀNG TRÚNG GIẢI THƯỞNG CHƯƠNG TRÌNH KHUYẾN MẠI “MẠNH CÁ TÍNH – ĐỈNH PHONG CÁCH”</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="sell">
+        <div class="container">
+            <h3>Khuyến mãi</h3>
+            <hr>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/khuyenmai/khuyenmai1.png" class="card-img-top" alt="khuyenmai1">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">KHUYẾN MẠI: XE XỨNG TẦM – QUÀ CỰC KHỦNG</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/khuyenmai/khuyenmai2.png" class="card-img-top" alt="khuyenmai2">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">ƯU ĐÃI LỚN CHO Y-RIDER CLUB: BUGI XỊN – XẾ LƯỚT MỊN</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/khuyenmai/khuyenmai3.png" class="card-img-top" alt="khuyenmai3">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">TRỢ GIÁ CỰC ĐỈNH TỪ YAMAHA – CHUNG TAY ĐÁNH BAY ĐẠI DỊCH</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="m-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../img/khuyenmai/khuyemmai4.png" class="card-img-top" alt="khuyemmai4">
+                            <div class="card-body">
+                                <p class="card-text"><a href="">THÔNG BÁO GIA HẠN CHƯƠNG TRÌNH KHUYẾN MẠI “TIẾT KIỆM NHẤT – QUÀ CỰC CHẤT”</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer------------------------------------------------------------------------------------------ -->
+    <footer class="footer ">
+        <div class="row ">
+            <div class="info ">
+
+                <ul>
+                    <li><label>CHĂM SÓC KHÁCH HÀNG</label></li>
+                    <li><a href="../html/chamsockhachhang.html">Giới Thiệu</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Khiếu Nại</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Tư Vấn Sản Phẩm</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="../html/chamsockhachhang.html">Chính Sách Bảo Hành</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="info ">
+                <ul>
+                    <li><label>KHUYẾN MÃI</label></li>
+                    <li><a href="# "> Sales</a></li>
+                    <li><a href="# ">Mã Giảm Giá</a></li>
+                    <li><a href="# ">Chương Trình Tích Lũy</a></li>
+                </ul>
+            </div>
+            <div class="info ">
+                <ul>
+                    <li><label>TIN TỨC</label></li>
+                    <li><a href="# ">Tin tức chung</a></li>
+                    <li><a href="# ">Tin tức xe máy</a></li>
+                    <li><a href="# ">Doanh số bán hàng</a></li>
+                    <li><a href="# ">Lái xe an toàn</a></li>
+                    <li><a href="# ">Đóng góp xã hội</a></li>
+                    <li><a href="# ">Các tin khác</a></li>
+                </ul>
+            </div>
+
+
+            <div class="info ">
+                <ul>
+                    <li><label>LIÊN HỆ</label></li>
+                    <li><a href=" ">Cá nhân:</a></li>
+                    <li>
+                        <a href="tel://0373781470 ">Điện thoại: 09467404017</a>
+                    </li>
+                    <li>
+                        <a href="mailto:nguyenddangtruong22042002@gmail.com"> nguyenddangtruong22042002@gmail.com</a>
+                    </li>
+                    <li><br></li>
+                    <li><a href=" ">Trường Đại học công nghiệp tp Hồ Chí Minh:</a></li>
+                    <li>
+                        <a href="tel://09464740401">Điện thoại: 094640401</a>
+                    </li>
+                    
+            </div>
+
+
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray ">
+
+            <div class="copyright ">
+                <a></a> &copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> Bản quyền thuộc về <a target="_blank ">NDT, 2006481</a> | <a target="_blank ">PST,</a>
+            </div>
+            <br>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
